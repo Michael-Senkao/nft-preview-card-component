@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.weight-400{
+    font-weight: 400;
+}
+
+.weight-600{
+    font-weight: 600;
+}
+
+.root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 250px;
+}
+
+.flex-item > *{
+    margin: 15px;
+}
+
+.card-image{
+    position: relative;
+
+}
+
+
+.card-image >*{
+    width: 220px;
+    border-radius: 5px;
+}
+
+.icon-view{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 220px;
+    width: 220px;
+    background-color: rgba(0, 200, 200, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.icon-view img{
+    width: 40px;
+}
+
+.card-image:hover .icon-view{
+    visibility: visible;
+    cursor: pointer;
+
+}
+
+.equilibrium:hover, .name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.ethereum{
+    color: hsl(178, 100%, 50%);
+}
+
+.clock{
+    justify-content: space-between;
+}
+
+.clock > *{
+    display: flex;
+    gap: 8px;
+}
+
+hr{
+    background-color: hsl(215, 32%, 27%);
+    border: none;
+    height: 1px;
+}
+
+.light{
+    color: hsl(215, 51%, 70%);
+}
+
+.avatar img{
+    height: 30px;
+    margin-right: 10px;
+}
